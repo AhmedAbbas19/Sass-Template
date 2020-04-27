@@ -1,0 +1,32 @@
+// abstracts
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+// base
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+// vendor
+@import 'vendors/googlefonts';
+@import 'vendors/fontawsome';
+
+// components
+@import 'components/btn';
+@import 'components/photo';
+@import 'components/card';
+@import 'components/rating';
+@import 'components/dropdown';
+@import 'components/dropdown-menu';
+@import 'components/navbar';
+@import 'components/id-card';
+@import 'components/form';
+// layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// pages
+@import 'pages/home';
+
+// theme

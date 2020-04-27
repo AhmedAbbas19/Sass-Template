@@ -1,0 +1,45 @@
+.id-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 3em;
+    border-radius: 10px;
+    border-bottom: 3px solid $primary-color;
+    text-align: center;
+    &--white{
+        background-color: $white-color;
+    }
+    &--shadow{
+        box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+    }
+    &__icon{
+        font-size: 3rem;
+        display: block;
+        margin-bottom: 2rem;
+        color: $gray-color;
+    }
+    &__img{
+        img{
+            max-width: 70px;
+            border-radius: 50%;
+            border: 2px solid $gray-color;
+            padding: 3px;
+        }
+    }
+    &__user{
+        display: flex;
+        align-items: center;
+        border-top: 1px solid $gray-color;
+        padding-top: 2.5em;
+        margin-top: 2.5em;
+        img{
+            margin-right: 1.5em;
+        }
+        span{
+            color: $primary-color;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            display: block;
+        }
+    }
+}

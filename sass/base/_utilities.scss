@@ -1,0 +1,231 @@
+.u-margin{
+    &--left{
+        &--xs{
+            margin-left: .5em;
+        }
+        &--sm{
+            margin-left: 1.0em;
+        }
+        &--md{
+            margin-left: 1.5em;
+        }
+        &--lg{
+            margin-left: 2.5em;
+        }
+        &--xl{
+            margin-left: 3.2em;
+        }
+    }
+    &--right{
+        &--xs{
+            margin-right: .5em;
+        }
+        &--sm{
+            margin-right: 1.0em;
+        }
+        &--md{
+            margin-right: 1.5em;
+        }
+        &--lg{
+            margin-right: 2.5em;
+        }
+        &--xl{
+            margin-right: 3.2em;
+        }
+    }
+    &--top{
+        &--xs{
+            margin-top: .5em;
+        }
+        &--sm{
+            margin-top: 1.0em;
+        }
+        &--md{
+            margin-top: 1.5em;
+        }
+        &--lg{
+            margin-top: 2.5em;
+        }
+        &--xl{
+            margin-top: 3.2em;
+        }
+    }
+    &--bottom{
+        &--xs{
+            margin-bottom: .5em;
+        }
+        &--sm{
+            margin-bottom: 1.0em;
+        }
+        &--md{
+            margin-bottom: 1.5em;
+        }
+        &--lg{
+            margin-bottom: 2.5em;
+        }
+        &--xl{
+            margin-bottom: 3.2em;
+        }
+    }
+    &--xs{
+        margin: 0.5em;
+    }
+    &--sm{
+        margin: 1.0em;
+    }
+    &--md{
+        margin: 1.5em;
+    }
+    &--lg{
+        margin: 2.5em;
+    }
+    &--xl{
+        margin: 3.2em;
+    }
+}
+
+.u-padding{
+    &--left{
+        &--xs{
+            padding-left: .5em;
+        }
+        &--sm{
+            padding-left: 1.0em;
+        }
+        &--md{
+            padding-left: 1.5em;
+        }
+        &--lg{
+            padding-left: 2.5em;
+        }
+        &--xl{
+            padding-left: 3.2em;
+        }
+    }
+    &--right{
+        &--xs{
+            padding-right: .5em;
+        }
+        &--sm{
+            padding-right: 1.0em;
+        }
+        &--md{
+            padding-right: 1.5em;
+        }
+        &--lg{
+            padding-right: 2.5em;
+        }
+        &--xl{
+            padding-right: 3.2em;
+        }
+    }
+    &--top{
+        &--xs{
+            padding-top: .5em;
+        }
+        &--sm{
+            padding-top: 1.0em;
+        }
+        &--md{
+            padding-top: 1.5em;
+        }
+        &--lg{
+            padding-top: 2.5em;
+        }
+        &--xl{
+            padding-top: 3.2em;
+        }
+        &--xg{
+            padding-top: 12em;
+        }
+    }
+    &--bottom{
+        &--xs{
+            padding-bottom: .5em;
+        }
+        &--sm{
+            padding-bottom: 1.0em;
+        }
+        &--md{
+            padding-bottom: 1.5em;
+        }
+        &--lg{
+            padding-bottom: 2.5em;
+        }
+        &--xl{
+            padding-bottom: 3.2em;
+        }
+        &--xg{
+            padding-bottom: 12em;
+        }
+    }
+    &--xs{
+        padding: .5em;
+    }
+    &--sm{
+        padding: 1.0em;
+    }
+    &--md{
+        padding: 1.5em;
+    }
+    &--lg{
+        padding: 2.5em;
+    }
+    &--xl{
+        padding: 3.2em;
+    }
+}
+
+.font-wight{
+    &--200{
+        font-weight: 200;
+    }
+    &--400{
+        font-weight: 400;
+    }
+    &--500{
+        font-weight: 500;
+    }
+    &--600{
+        font-weight: 600;
+    }
+    &--800{
+        font-weight: 800;
+    }
+    &--900{
+        font-weight: 900;
+    }
+}
+.u-flex{
+    display: flex;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.animated-bg{
+    position: relative;
+    &__img{
+        animation: MoveUpDown 3s linear infinite;
+        position: absolute;
+        top: -35%;
+        img{
+            max-width: 60%;
+        }
+    }
+    &--left{
+        left: 5%;
+    }
+    &--right{
+        right: 5%;
+    }
+    @keyframes MoveUpDown {
+        0%, 100% {
+          top: -35%;
+        }
+        50% {
+          top: -20%;
+        }
+      }
+}

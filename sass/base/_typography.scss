@@ -1,0 +1,52 @@
+h1,h2,h3,h4{
+    font-family: 'Poppins' ,sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.6px;
+}
+h1{
+    font-size: 4.4rem;
+    margin-bottom: 25px;
+}
+h2{
+    font-size: 3rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    &:before{
+        background: #0078ff none repeat scroll 0 0;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        left: 50%;
+        margin-left: -20px;
+        position: absolute;
+        width: 40px;
+    }
+}
+h4{
+    font-size: 1.8rem;
+    margin: 0;
+}
+h5{
+    font-size: 1.4rem;
+    margin: 0;
+}
+p{
+    font-family: 'Open Sans' , sans-serif;
+    color: $black-light-color;
+    line-height: 26px;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.link{
+    color: inherit;
+    transition: all 0.4s ease;
+    &--primary,&:hover{
+        color: $primary-color;
+    }
+}

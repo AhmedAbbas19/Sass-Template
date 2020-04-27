@@ -1,0 +1,90 @@
+.card{
+    &--white{
+        background-color: $white-color;
+    }
+    &--shadow{
+        box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+    }
+    &:hover{
+        .hover--up{
+            top: 50%;
+            opacity: 1;
+        }
+        .hover--fade{
+            opacity: 0.5;
+        }
+        .hover--scale-in{
+            transform: scale(1.2);
+        }
+    }
+    .thump{
+        position: relative;
+        overflow: hidden;
+        &__img{
+            width: 100%;
+            display: block;
+            transition: all 0.4s ease;
+        }
+        &__content{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all 0.4s ease;
+        }
+        .date{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            background: rgba($black-color, 0.8);
+            color: $white-color;
+            padding: 15px;
+            border-radius: 5px; 
+            &__day{
+                display: block;
+                font-size: 4rem;
+                font-weight: 900;
+                color: #0078ff;
+            }
+            h5{
+                font-weight: 400;
+            }
+        }
+    }
+    .info{
+        .meta{
+            &__author,&__comments{
+                font-size: 1.4rem;
+                font-weight: 400;
+                color: #666666;
+                display: inline-block;
+            }
+        }
+        &__type{
+            font-size: 1.4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+        &__icon{
+            color: $primary-color;
+            margin-right: 0.3em;
+        } 
+        .price{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid $gray-color;
+            padding-top: 25px;
+            &__value{
+                font-size: 1.8rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+}

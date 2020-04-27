@@ -1,0 +1,90 @@
+.footer{
+    background-color: $blue-dark-color;
+    color: $white-color;
+    &__title{
+        margin-bottom: 3rem;
+     }
+     &__paragraph{
+         color: $white-color;
+         margin-bottom: 3rem;
+         span{
+             color: $primary-color;
+         }
+     }
+    .about{
+        .social{
+            li{
+                display: inline-block;
+            }
+            &__item{
+                color: $white-color;
+                font-size: 1.4rem;
+                border: 1px solid rgba($white-color, 0.1);
+                padding: 1rem 1.8rem;
+                margin-right: 1rem;
+                transition: all 0.4s ease;
+                &:hover{
+                    color: $primary-color;
+                    background-color: $white-color;
+                }
+            }
+        }
+    }
+    .list{
+        &__item{
+            color: $white-color;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            display: block;
+            transition: all 0.4s ease;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+    .stats{
+        padding-bottom: 2.5rem;
+        border-bottom: 1px solid rgba($white-color, 0.3);
+        &__count{
+            color: $primary-color;
+            margin-bottom: 0;
+            display: inline-block;
+            &::before{
+                display: none;
+            }
+        }
+        &__name{
+            font-size: 1.6rem;
+            color: $white-color;
+            display: block;
+        }
+        &__pay{
+            margin-top: 3rem;
+            img{
+                max-width: 70px;
+                margin-right: 0.5rem;
+            }
+            li{
+                display: inline-block;
+
+            }
+        }
+    }
+    .copy{
+        padding: 1.5rem 0;
+        border-top: 1px solid rgba($white-color, 0.1);
+        .u-flex{
+            justify-content: space-between;
+            align-items: center;
+        }
+        p{
+            margin: 0;
+        }
+        ul li{
+            display: inline-block;
+            margin-left: 15px;
+            font-size: 1.4rem;
+        }
+    }
+}

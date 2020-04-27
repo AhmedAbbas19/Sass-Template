@@ -1,0 +1,181 @@
+// newly-added section
+.newly-added{
+    background-color: $white-color;
+    &__title{
+        border-bottom: 1px solid $gray-light-color;
+        padding-bottom: 25px;
+        margin-bottom: 3rem;
+    }
+    &__btns{
+        .btn{
+            margin-right: 1em;
+        }
+        margin-bottom: 3rem;
+    }
+    &__content{
+        .row{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+// top-rated section
+.top-rated{
+    background-color: $gray-light-color;
+    &__title{
+        border-bottom: 1px solid #e7e7e7;
+        padding-bottom: 25px;
+        margin-bottom: 3rem;
+    }
+    &__btn{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+// Choose-us section
+.choose-us{
+    background-color: $blue-dark-color;
+    text-align: center;
+    &__title{
+        color: $white-color;
+    }
+    &__paragraph{
+        color: $white-color;
+        margin-bottom: 4rem;
+    }
+    .content{
+        &__icon{
+            margin-bottom: 2rem;
+            border-radius: 50%;
+            padding: 1.5rem;
+            display: inline-block;
+            i{
+                background: rgba(255, 255, 255, 0.1);
+                color: $white-color;
+                font-size: 3.5rem;
+                border-radius: 50%;
+                padding: 2.3rem 2.5rem;
+            }
+        }
+        &__title{
+            color: $white-color;
+            margin-bottom: 1.5rem;
+        }
+        &__paragraph{
+            color: $white-color;
+        }
+        .item:nth-child(odd){
+            .content__icon{
+                border-top: 1px solid $white-color;
+            }
+        }
+        .item:nth-child(even){
+            .content__icon{
+                border-bottom: 1px solid $white-color;
+            }
+        }
+    }
+}
+
+// Customers section
+.customers{
+    background-color: $gray-light-color;
+    text-align: center;
+    &__paragraph{
+        margin-bottom: 4rem;
+    }
+    &__dots{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 8px;
+            border-radius: 5px;
+            background-color: $primary-color;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -25px;
+            width: 10px;
+            height: 8px;
+            border-radius: 5px;
+            background-color: $black-light-color;
+        }
+    }
+}
+
+// Subscribe section
+.subscribe{
+    background-color: $blue-dark-color;
+    &__title{
+        padding: 0;
+        color: $white-color;
+        &::before{
+            display: none;
+        }
+    }
+    &__paragraph{
+        color: $white-color;
+    }
+    &__form{
+        max-width: 400px;
+        margin-top: 25px;
+    }
+    &__stats{
+        display: inline-block;
+        padding-right: 3rem;
+    }
+    &__btn{
+        .btn{
+            margin-top: 3rem;
+            &:hover{
+                border-color: $white-color;
+                background-color: $white-color;
+                color: $blue-dark-color;
+            }
+        }
+    }
+    .stats{
+        padding-bottom: 2.5rem;
+        border-bottom: 1px solid rgba($white-color, 0.3);
+        &__count{
+            color: $white-color;
+            margin-bottom: 0;
+            font-weight: 800;
+            font-size: 5rem;
+            position: relative;
+            display: inline-block;
+            &::after{
+                position: absolute;
+                content: "\f067";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 600;
+                right: -25px;
+                top: 25px;
+                font-size: 2rem;
+            }
+        }
+        &__name{
+            font-size: 1.6rem;
+            color: $white-color;
+            display: block;
+        }
+    }
+}
+
+// Latest-news section
+.latest{
+    background-color: $gray-light-color;
+    &__paragraph{
+        margin-bottom: 6rem;
+    }
+}

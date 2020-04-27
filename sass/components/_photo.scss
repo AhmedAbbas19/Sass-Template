@@ -1,0 +1,42 @@
+.photo{
+    position: relative;
+    &:hover{
+        .photo__content{
+            background-color: rgba($black-color, 0.7);
+        }
+        .photo__content p{
+            opacity: 1;
+            margin-top: 24%;
+        }
+    }
+}
+.photo__img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.photo__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba($black-color, 0);
+    transition: all 0.4s ease;
+    p{
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        margin-top: 30%;
+        color: #ffffff;
+        font-size: 1.6rem;
+        transition: all 0.4s ease;
+        opacity: 0;
+        span{
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.header{
+    background: url('../images/bg2.jpg') no-repeat fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    &__title{
+        color: $white-color;
+    }
+    &__paragraph{
+        color: $white-color;
+        font-size: 2rem;
+    }
+    &__search{
+        margin-top: 2.5em;
+        padding: 4.5em;
+        border-top: 1px solid rgba($gray-color, 0.3);
+        .form-group__input{
+            max-width: 70%;
+        }
+    }
+}

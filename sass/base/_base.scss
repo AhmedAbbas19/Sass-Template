@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(228, 63, 63);
+}
+a,a:hover,a:visited,a:active{
+    text-decoration: unset;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+// Grid
+@for $i from 1 through 12{
+    .col-#{$i}{
+        width: (100% / (12 / $i));
+        float: left;
+        padding-left: (45px / (12 / $i));
+        padding-right: (45px / (12 / $i));
+        box-sizing: border-box;
+    }
+}
+.row{
+    content: "";
+    clear: both;
+    display: table;
+    margin: auto -15px;
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+@for $i from 1 through 12{
+    .col-offset-#{$i}{
+        margin-left: (100% / (12 / $i));
+    }
+}

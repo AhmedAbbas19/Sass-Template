@@ -1,0 +1,33 @@
+.dropdown{
+    &__menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 250px;
+        background: $white-color;
+        border-radius: 3px;
+        box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.15);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+    &--open-left{
+        left: unset;
+        right: 0;
+    }
+    &__item{
+        color: $black-color;
+        font-size: 1.3rem;
+        font-weight: 600;
+        display: block;
+        padding: 1.2rem 1.5rem;
+        transition: all 0.5s ease;
+        &:hover{
+            color: $primary-color;
+            padding-left: 2.5rem;
+        }
+        &:not(:last-child){
+            border-bottom: 1px solid $gray-light-color;
+        }
+    }
+}
