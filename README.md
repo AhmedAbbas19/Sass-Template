@@ -1,3 +1,3 @@
-# Dashboard
+# Sass Template
 
 ![Screenshot](screenshot.png)
